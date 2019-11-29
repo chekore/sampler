@@ -2,10 +2,11 @@ package console
 
 import (
 	"fmt"
-	ui "github.com/gizak/termui/v3"
 	"log"
 	"os"
 	"time"
+
+	ui "github.com/gizak/termui/v3"
 )
 
 const (
@@ -14,8 +15,8 @@ const (
 	ColumnsCount      = 80
 	RowsCount         = 40
 	AppTitle          = "sampler"
-	AppVersion        = "1.0.1"
-	AppLicenseWarning = "UNLICENSED. FOR NON-COMMERCIAL USE ONLY. VISIT WWW.SAMPLER.DEV"
+	AppVersion        = "1.0.3"
+	AppLicenseWarning = "NOT ACTIVATED. PLEASE CONSIDER TO PURCHASE PERSONAL OR COMMERCIAL LICENSE. WWW.SAMPLER.DEV    "
 )
 
 const (
@@ -38,10 +39,13 @@ func Init() {
 	}
 }
 
+// Close function calls Close from termui package,
+// which closes termbox-go
 func Close() {
 	ui.Close()
 }
 
+// Exit function exits the program successfully
 func Exit(message string) {
 	if len(message) > 0 {
 		println(message)

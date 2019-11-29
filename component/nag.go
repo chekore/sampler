@@ -33,7 +33,8 @@ func (n *NagWindow) Draw(buffer *ui.Buffer) {
 	text := append(util.AsciiLogo, []string{
 		"", "", "",
 		"Thank you for using Sampler.",
-		"It is always free for non-commercial use, but you can support the project and buy a personal license.",
+		"It is always free, but you can sponsor the project and buy the personal or commercial license",
+		"for priority support and technical assistance.",
 		"",
 		"Please visit www.sampler.dev",
 	}...)
@@ -46,8 +47,8 @@ func (n *NagWindow) Draw(buffer *ui.Buffer) {
 			buffer)
 	}
 
-	buffer.SetString(string(buttonOk), ui.NewStyle(n.palette.ReverseColor, n.palette.BaseColor),
-		util.GetMiddlePoint(n.Block.Rectangle, string(buttonOk), 4))
+	buffer.SetString(buttonOk, ui.NewStyle(n.palette.ReverseColor, n.palette.BaseColor),
+		util.GetMiddlePoint(n.Block.Rectangle, buttonOk, 4))
 
 	n.Block.Draw(buffer)
 }
