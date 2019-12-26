@@ -6,9 +6,9 @@ Sampler is a tool for shell commands execution, visualization and alerting. Conf
 ![sampler](https://user-images.githubusercontent.com/6069066/56404396-70b14d00-6234-11e9-93cd-54461bf40c96.gif)
 
 ## Why do I need it?
-One can sample any dynamic process right from the terminal - observe changes in the database, monitor MQ in-flight messages,  trigger a deployment script and get notification when it's done. 
+One can sample any dynamic process right from the terminal — observe changes in the database, monitor MQ in-flight messages,  trigger a deployment script and get notification when it's done. 
 
-If there is a way to get a metric using a shell command - then it can be visualized with Sampler momentarily.
+If there is a way to get a metric using a shell command, then it can be visualized with Sampler momentarily.
 
 ## Installation
 
@@ -46,7 +46,7 @@ Sampler is by no means an alternative to full-scale monitoring systems, but rath
 If spinning up and configuring [Prometheus with Grafana](https://prometheus.io) is complete overkill for you task, Sampler might be the right solution. No servers, no databases, no deploy - you specify shell commands, and it just works.
 
 ## Then it should be installed on every server I monitor?
-No, you can run Sampler on local, but still gather telemetry from multiple remote machines. Any visualization might have `init` command, where you can ssh to a remote server. See [SSH example](https://github.com/sqshq/sampler#ssh)
+No, you can run Sampler on local, but still gather telemetry from multiple remote machines. Any visualization might have `init` command, where you can ssh to a remote server. See the [SSH example](https://github.com/sqshq/sampler#ssh)
 
 ## Contents
 
